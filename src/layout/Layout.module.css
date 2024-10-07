@@ -1,0 +1,81 @@
+.layout {
+    display: flex;
+   min-height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 60px 30px;
+    border-right: 1px solid var(--separator-color);
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    gap: 8px;
+}
+
+.exit_icon {
+    width: 26px;
+    height: 26px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.email {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #9EA1B1;
+}
+
+.content {
+    padding: 40px 60px;
+    width: 100%;
+}
