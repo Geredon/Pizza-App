@@ -9,9 +9,11 @@ import { Product } from './pages/Product/Product.tsx';
 import axios from 'axios';
 import { PREFIX } from './helpers/API.ts';
 import { AuthLayout } from './layout/Auth/AuthLayout.tsx';
-import { Login } from './pages/Login/Login.tsx';
-import { Register } from './pages/Regitster/Register.tsx';
+import { LoginForm } from './pages/Login/LoginForm.tsx';
 import { RequireAuth } from './helpers/RequireAuth.tsx';
+import { Provider } from 'react-redux';
+import { store } from './store/store.ts';
+import { RegisterForm } from './pages/Regitster/Register.tsx';
 
 
 const Menu = lazy(() => import('./pages/Menu/Menu.tsx'));
@@ -50,11 +52,11 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: 'login',
-				element: <Login/>
+				element: <LoginForm/>
 			},
 			{
 				path: 'register',
-				element: <Register/>
+				element: <RegisterForm/>
 			}
 		]
 	},
@@ -66,6 +68,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<RouterProvider router={router}/>
+		<Provider store={store}>
+			<RouterProvider router={router}/>
+		</Provider>
 	</React.StrictMode>
 );
