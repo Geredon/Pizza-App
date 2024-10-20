@@ -1,4 +1,4 @@
-import { Headling } from '../../components/Headling/Headling.tsx';
+import { Heading } from '../../components/Heading/Heading.tsx';
 import { Input } from '../../components/Input/Input.tsx';
 import { Button } from '../../components/Buttton/Button.tsx';
 import { Link, useNavigate } from 'react-router-dom';
@@ -43,7 +43,7 @@ export const RegisterForm = () => {
 
 	return (
 		<div className={styles['login']}>
-			<Headling>Регистрация</Headling>
+			<Heading>Регистрация</Heading>
 			{registerErrorMessage && <div className={styles['error']}>{registerErrorMessage}</div>}
 			<form className={styles['form']} onSubmit={submit}>
 				<div className={styles['field']}>

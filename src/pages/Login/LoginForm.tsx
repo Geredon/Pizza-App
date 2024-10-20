@@ -1,4 +1,4 @@
-import { Headling } from '../../components/Headling/Headling.tsx';
+import { Heading } from '../../components/Heading/Heading.tsx';
 import { Input } from '../../components/Input/Input.tsx';
 import { Button } from '../../components/Buttton/Button.tsx';
 import { Link, useNavigate } from 'react-router-dom';
@@ -44,7 +44,7 @@ export const LoginForm = () => {
 
 	return (
 		<div className={styles['login']}>
-			<Headling>Вход</Headling>
+			<Heading>Вход</Heading>
 			{loginErrorMessage && <div className={styles['error']}>{loginErrorMessage}</div>}
 			<form className={styles['form']} onSubmit={submit}>
 				<div className={styles['field']}>
