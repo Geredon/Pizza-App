@@ -1,0 +1,75 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.product-name {
+    color: var(--text-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.product {
+    display: flex;
+    gap: 60px;
+    margin: 40px 0 0 40px;
+}
+
+.pizza {
+    height: 270px;
+    border-radius: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #faf8f8;
+    width: 40px;
+    height: 20px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: #111719;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    min-width: 300px;
+}
+
+.line span {
+    color: #9796A1;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.composition {
+    color: #9796A1;
+}

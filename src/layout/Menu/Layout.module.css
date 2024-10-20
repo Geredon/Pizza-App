@@ -1,12 +1,12 @@
 .layout {
     display: flex;
-   min-height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    padding: 60px 30px 60px 30px;
+    padding: 60px 40px 60px 40px;
     border-right: 1px solid var(--separator-color);
 }
 
